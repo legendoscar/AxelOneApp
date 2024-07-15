@@ -1,0 +1,11 @@
+{
+    "name": "TenantOrgModule",
+    "alias": "tenantorgmodule",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\TenantOrgModule\\App\\Providers\\TenantOrgModuleServiceProvider"
+    ],
+    "files": []
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            background-color: #ffffff;
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            text-align: center;
+            padding-bottom: 20px;
+        }
+        .header img {
+            max-width: 150px;
+        }
+        .content {
+            font-size: 16px;
+            color: #333333;
+            line-height: 1.5;
+        }
+        .content h1 {
+            color: #333333;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .content p {
+            margin: 10px 0;
+        }
+        .content .button-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .content .button {
+            background-color: #1E90FF;
+            color: #ffffff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+            display: inline-block;
+        }
+        .content .button:hover {
+            background-color: #1C86EE;
+        }
+        .footer {
+            text-align: center;
+            padding-top: 20px;
+            font-size: 14px;
+            color: #777777;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="https://fyndah.com/assets/fyndah_logo-CPI66fPe.png" alt="Fyndah Logo">
+        </div>
+        <div class="content">
+            <h1>Welcome to Fyndah, {{ $username }}!</h1>
+            <p>Thank you for creating a Fyndah account! To confirm your email address, click the button below or copy and paste the URL in your browser.</p>
+            <div class="button-container">
+                <a href="{{ $url }}" class="button">Verify Email Address</a>
+            </div>
+            <p>After confirming your email address, you will receive only important messages from Fyndah, notifications about the status of your account, and new special offers.</p>
+            <p>Thank you for choosing Fyndah!</p>
+        </div>
+        <div class="footer">
+            <p>Best regards,</p>
+            <p>Fyndah Team</p>
+        </div>
+    </div>
+</body>
+</html>

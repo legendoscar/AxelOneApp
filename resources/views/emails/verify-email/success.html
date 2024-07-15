@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>Email Verification Successful - Fyndah</title> -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            background-color: #ffffff;
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            text-align: center;
+            padding-bottom: 20px;
+        }
+        .header img {
+            max-width: 150px;
+        }
+        .content {
+            font-size: 16px;
+            color: #333333;
+            line-height: 1.5;
+        }
+        .content h1 {
+            color: #333333;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .content p {
+            margin: 10px 0;
+        }
+        .footer {
+            text-align: center;
+            padding-top: 20px;
+            font-size: 14px;
+            color: #777777;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="https://fyndah.com/assets/fyndah_logo-CPI66fPe.png" alt="Fyndah Logo">
+        </div>
+        <div class="content">
+            <h1>Email Verification Successful, {{ $username }}!</h1>
+            <p>Your email address has been successfully verified with Fyndah.</p>
+            <p>You will now receive important messages, notifications about your account status, and new special offers from Fyndah.</p>
+            <p>Thank you for verifying your email address!</p>
+        </div>
+        <div class="footer">
+            <p>Best regards,</p>
+            <p>Fyndah Team</p>
+        </div>
+    </div>
+</body>
+</html>

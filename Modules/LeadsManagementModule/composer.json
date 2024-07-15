@@ -1,0 +1,31 @@
+{
+    "name": "nwidart/leadsmanagementmodule",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\LeadsManagementModule\\": "",
+            "Modules\\LeadsManagementModule\\App\\": "app/",
+            "Modules\\LeadsManagementModule\\Database\\Factories\\": "database/factories/",
+            "Modules\\LeadsManagementModule\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Modules\\LeadsManagementModule\\Tests\\": "tests/"
+        }
+    }
+}

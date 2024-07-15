@@ -1,0 +1,9 @@
+{
+    "UserManagement": true,
+    "Company": true,
+    "Posts": true,
+    "CRM": true,
+    "TenantorgModule": true,
+    "TenantOrgModule": true,
+    "LeadsManagementModule": true
+}

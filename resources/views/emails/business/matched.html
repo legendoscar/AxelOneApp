@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>You Have Been Matched in a Search!</title> -->
+    <style>
+        /* Reset default styles */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* Container styles */
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Logo styles */
+        .logo {
+            display: block;
+            margin: 0 auto 20px;
+            max-width: 200px;
+        }
+
+        .button-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        /* Header styles */
+        .header {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #007bff;
+            text-align: center;
+        }
+
+        /* Content styles */
+        .content {
+            margin-bottom: 20px;
+            font-weight: 900;
+            font-style: italic;
+        }
+
+        /* Link styles */
+        .link {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        /* Message styles */
+        .message {
+            margin-bottom: 20px;
+        }
+
+        /* Signature styles */
+        .signature {
+            margin-bottom: 20px;
+        }
+        .button {
+            background-color: #1E90FF;
+            color: #ffffff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img class="logo" src="https://fyndah.com/assets/fyndah_logo-CPI66fPe.png" alt="Fyndah Logo">
+        <h1 class="header">Dear {{ $org_name }},</h1>
+        <p class="content">You have been matched in a search request on Fyndah!</p>
+        <p class="content">This means that potential clients are looking for businesses like yours.</p>
+        <div class="link">
+            <p>Click the link to view the details of this search request and connect with your potential client:</p>
+        </div>
+            <div class="button-container">
+                <a href="{{ $url }}" class="button">{{ 'View Search' }}</a>
+            </div>
+        <div class="message">
+            <p>We encourage you to act quickly to secure this opportunity. If you require any assistance or have
+                questions, do not hesitate to reach out to our support team.</p>
+        </div>
+        <div class="signature">
+            <p>Kind Regards,</p>
+        </div>
+    </div>
+</body>
+
+</html>
